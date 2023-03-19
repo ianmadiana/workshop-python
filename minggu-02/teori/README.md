@@ -4,7 +4,7 @@ Python memiliki pernyataan “if” yang memungkinkan program untuk mengevaluasi
 Pernyataan "for" digunakan untuk mengulangi suatu blok kode secara berulang, misalnya untuk mengakses setiap elemen pada suatu daftar atau rangkaian nilai.<br /> 
 Python memiliki pernyataan "break" dan "continue" yang memungkinkan program untuk keluar dari suatu perulangan atau melanjutkan ke iterasi berikutnya tanpa menyelesaikan iterasi saat ini.<br /> 
 Pernyataan "else" dapat ditambahkan setelah pernyataan "for" atau "while" untuk mengeksekusi suatu blok kode ketika perulangan telah selesai dieksekusi.<br /> 
-Python juga memiliki struktur "try" dan "except" untuk menangani kesalahan atau exception dalam program.
+Python memiliki struktur "try" dan "except" untuk menangani kesalahan atau exception dalam program.
 Pernyataan "raise" digunakan untuk melempar exception secara manual.<br /> 
 Keyword "finally" dapat ditambahkan setelah blok "try" dan "except" untuk mengeksekusi suatu blok kode tanpa peduli apa pun yang terjadi sebelumnya.<br /> 
-Python juga memiliki pernyataan "assert" yang digunakan untuk memastikan bahwa suatu kondisi bernilai True pada suatu titik dalam program.<br />
+Python memiliki pernyataan "assert" yang digunakan untuk memastikan bahwa suatu kondisi bernilai True pada suatu titik dalam program.<br />
