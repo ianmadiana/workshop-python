@@ -20,11 +20,15 @@ print(fruits) # output: ['banana', 'apple', 'kiwi', 'banana', 'pear', 'apple', '
 fruits.sort()
 print(fruits) #output: ['apple', 'apple', 'banana', 'banana', 'kiwi', 'orange', 'pear']
 
-# Menghapus item pada posisi yang diberikan dalam daftar, dan mengembalikannya. Jika tidak ada indeks yang ditentukan, a.pop() akan menghapus dan mengembalikan item terakhir dalam daftar.
+# Menghapus item pada posisi yang diberikan dalam daftar, dan mengembalikannya. 
+# Jika tidak ada indeks yang ditentukan, 
+# a.pop() akan menghapus dan mengembalikan item terakhir dalam daftar.
 print(fruits.pop()) #output: pear
 
 # Menggunakan List sebagai Stack (tumpukan)
-# Stack digunakan untuk menyimpan sekumpulan data dengan konsep Last-In-First-Out (LIFO). Artinya, data yang terakhir dimasukkan ke dalam stack akan menjadi data yang pertama kali dikeluarkan dari stack.
+# Stack digunakan untuk menyimpan sekumpulan data dengan konsep Last-In-First-Out (LIFO). 
+# Artinya, data yang terakhir dimasukkan ke dalam stack akan menjadi data yang pertama 
+# kali dikeluarkan dari stack.
 stack = [3, 4, 5]
 stack.append(6)
 stack.append(7)
@@ -146,8 +150,8 @@ print(singleton)
 # Sets
 # Himpunan (set) adalah koleksi tak terurut tanpa elemen duplikat
 basket = {'apple', 'orange', 'apple', 'pear', 'orange', 'banana'}
-print(basket)                              # show that duplicates have been removed
-print('orange' in basket)                 # fast membership testing
+print(basket)                           # show that duplicates have been removed
+print('orange' in basket)               # fast membership testing
 print('crabgrass' in basket)
 
 # Menunjukkan operasi himpunan pada huruf-huruf unik dari dua kata
@@ -179,7 +183,8 @@ print('jack' not in tel)
 # Konstruktor dict() membangun kamus secara langsung dari urutan pasangan kunci-nilai:
 print(dict([('sape', 4139), ('guido', 4127), ('jack', 4098)]))
 
-# Ketika kunci-kuncinya adalah string yang sederhana, terkadang lebih mudah untuk menentukan pasangan-pasangan tersebut menggunakan argumen kata kunci:
+# Ketika kunci-kuncinya adalah string yang sederhana,
+# terkadang lebih mudah untuk menentukan pasangan-pasangan tersebut menggunakan argumen kata kunci:
 print(dict(sape=4139, guido=4127, jack=4098))
 
 # Looping Techniques
@@ -192,7 +197,8 @@ for i, v in enumerate(['tic', 'tac', 'toe']):
     
 questions = ['name', 'quest', 'favorite color']
 answers = ['lancelot', 'the holy grail', 'blue']
-# zip() adalah sebuah fungsi yang digunakan untuk menggabungkan dua atau lebih iterable secara berdampingan untuk membuat sebuah objek zip yang baru.
+# zip() adalah sebuah fungsi yang digunakan untuk menggabungkan
+# dua atau lebih iterable secara berdampingan untuk membuat sebuah objek zip yang baru.
 for q, a in zip(questions, answers):
     print('What is your {0}?  It is {1}.'.format(q, a))
     
