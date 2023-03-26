@@ -95,7 +95,7 @@ matrix = [
     [9, 10, 11, 12],
 ]
 print([[row[i] for row in matrix] for i in range(4)])
-
+# penggunaan transpose
 transposed = []
 for i in range(4):
     transposed.append([row[i] for row in matrix])
@@ -114,6 +114,7 @@ print(list(zip(*matrix)))
 
 # Pernyataan del
 a = [-1, 1, 66.25, 333, 333, 1234.5]
+# menghapus list dengan index
 del a[0]
 print(a)
 [1, 66.25, 333, 333, 1234.5]
@@ -122,6 +123,8 @@ print(a)
 [1, 66.25, 1234.5]
 del a[:]
 print(a)
+# hapus semua variabel a
+del a
 
 # Tuples and Sequences
 t = 12345, 54321, 'hello!'
@@ -141,6 +144,7 @@ print(len(singleton))
 print(singleton)
 
 # Sets
+# Himpunan (set) adalah koleksi tak terurut tanpa elemen duplikat
 basket = {'apple', 'orange', 'apple', 'pear', 'orange', 'banana'}
 print(basket)                              # show that duplicates have been removed
 print('orange' in basket)                 # fast membership testing
@@ -188,6 +192,7 @@ for i, v in enumerate(['tic', 'tac', 'toe']):
     
 questions = ['name', 'quest', 'favorite color']
 answers = ['lancelot', 'the holy grail', 'blue']
+# zip() adalah sebuah fungsi yang digunakan untuk menggabungkan dua atau lebih iterable secara berdampingan untuk membuat sebuah objek zip yang baru.
 for q, a in zip(questions, answers):
     print('What is your {0}?  It is {1}.'.format(q, a))
     
