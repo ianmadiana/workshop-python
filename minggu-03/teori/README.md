@@ -9,6 +9,4 @@ Beberapa jenis struktur data di Python antara lain:<br>
 
 4. Dictionary - jenis struktur data yang berisi kumpulan pasangan key-value. Dictionary ditandai dengan tanda kurung kurawal, dan setiap pasangan key-value dipisahkan dengan koma.<br><br>
 
-Operasi yang dapat dilakukan pada struktur data tersebut, seperti pengindeksan dan pemotongan (slicing) pada list dan tuple, operasi matematika pada set, dan manipulasi data pada dictionary.<br><br>
-
-Selain itu, berbagai fitur lain yang terkait dengan struktur data, seperti pemrosesan data dengan list comprehension, penggunaan fungsi built-in seperti len() dan sorted(), serta penggunaan modul copy untuk mengcopy objek struktur data. Dokumen tersebut juga memberikan beberapa contoh penggunaan struktur data dalam kasus pemrograman yang umum, seperti melakukan sorting dan filtering data.
+Operasi yang dapat dilakukan pada struktur data tersebut, seperti pengindeksan dan pemotongan (slicing) pada list dan tuple, operasi matematika pada set, dan manipulasi data pada dictionary. Selain itu, berbagai fitur lain yang terkait dengan struktur data, seperti pemrosesan data dengan list comprehension, penggunaan fungsi built-in seperti len() dan sorted(), serta penggunaan modul copy untuk mengcopy objek struktur data.
