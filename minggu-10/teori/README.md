@@ -1,5 +1,5 @@
 # Akses ke Basis Data	
-    ## Psycopg ##
+## Psycopg
     Psycopg adalah sebuah modul Python yang berfungsi sebagai antarmuka untuk menghubungkan aplikasi Python dengan database PostgreSQL. Dengan menggunakan modul ini, pengembang dapat berinteraksi dengan database PostgreSQL, menjalankan pernyataan SQL, mengirim permintaan, dan memanipulasi data.
     
     Psycopg menyediakan fitur-fitur yang kuat untuk mengakses database PostgreSQL. Modul ini mendukung berbagai jenis data PostgreSQL, termasuk tipe data khusus seperti array, hstore, dan JSON. Psycopg juga mendukung transaksi database, parameterisasi pernyataan SQL, penanganan kesalahan, dan banyak fitur lainnya.
