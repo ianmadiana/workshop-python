@@ -1,12 +1,15 @@
+# koneksi ke database
 import sqlite3
 
 import click
+# objek unik untuk setiap request
 from flask import current_app, g
 
 
 def get_db():
     if 'db' not in g:
         g.db = sqlite3.connect(
+            # objek khusus yang menunjuk ke aplikasi Flask untuk menangani request
             current_app.config['DATABASE'],
             detect_types=sqlite3.PARSE_DECLTYPES
         )
@@ -20,7 +23,8 @@ def close_db(e=None):
 
     if db is not None:
         db.close()
-        
+
+# fungsi untuk menjalankan/inisialisasi database 
 def init_db():
     db = get_db()
 
@@ -34,6 +38,7 @@ def init_db_command():
     init_db()
     click.echo('Initialized the database.')
 
+# fungsi untuk register aplikasi
 def init_app(app):
     app.teardown_appcontext(close_db)
     app.cli.add_command(init_db_command)

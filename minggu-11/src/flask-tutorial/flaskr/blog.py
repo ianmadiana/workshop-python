@@ -1,3 +1,4 @@
+# menetapkan blueprint dan mendaftarkannya di aplikasi factory
 from flask import (
     Blueprint, flash, g, redirect, render_template, request, url_for
 )
@@ -8,6 +9,7 @@ from flaskr.db import get_db
 
 bp = Blueprint('blog', __name__)
 
+# ketika index diakses maka akan menampilkan semua postingan dari yang pertama
 @bp.route('/')
 def index():
     db = get_db()
@@ -18,6 +20,8 @@ def index():
     ).fetchall()
     return render_template('blog/index.html', posts=posts)
 
+# ketika page create diakses dan user membuat postingan
+# data dikirim dengan metode post
 @bp.route('/create', methods=('GET', 'POST'))
 @login_required
 def create():
@@ -43,6 +47,9 @@ def create():
 
     return render_template('blog/create.html')
 
+# fungsi untuk update postingan
+# fungsi ini akan mengambil ID dari post
+# dan mencocokkannya dengan user
 def get_post(id, check_author=True):
     post = get_db().execute(
         'SELECT p.id, title, body, created, author_id, username'
@@ -59,6 +66,7 @@ def get_post(id, check_author=True):
 
     return post
 
+# mengambil ID post
 @bp.route('/<int:id>/update', methods=('GET', 'POST'))
 @login_required
 def update(id):
@@ -86,6 +94,7 @@ def update(id):
 
     return render_template('blog/update.html', post=post)
 
+# routing untuk hapus postingan
 @bp.route('/<int:id>/delete', methods=('POST',))
 @login_required
 def delete(id):
